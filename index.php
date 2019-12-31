@@ -3,7 +3,7 @@
 ?>
 
     <main>
-        <p>This is the main content!</p>
+        <h1>This is the home page</h1>
     </main>
 
 <?php
