@@ -9,7 +9,7 @@
     </head>
     <body>
 
-        <header class="center">
+        <header class="center nav-bar-main">
             <a class="home-button" href="index.php">
                 <img class="home-img" src="img/home.png" alt="home">
             </a>
