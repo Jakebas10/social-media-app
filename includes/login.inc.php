@@ -1,6 +1,8 @@
 <?php
 
     function validLogin($user) {
+        $_SESSION['uid'] = $user['user_id'];
+        $_SESSION['username'] = $user['username'];
         header("Location: ../app.php");
         exit();
     }
@@ -21,6 +23,11 @@
 
         $username = $_POST['username'];
         $password = $_POST['password'];
+
+        if (empty($username) || empty($password)) {
+            header("Location: ../index.php?error=emptyFields&username=" . $username);
+            exit();
+        }
 
         $query = "select * from users where username = '$username'";
         $result = mysqli_query($conn, $query);
