@@ -4,6 +4,6 @@
 
     <main>
         <div class="center wrapper-main">
-            <h1>You are logged out</h1>
+            <h1>You are logged in</h1>
         </div>
     </main>

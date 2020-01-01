@@ -1,4 +1,7 @@
 <?php
+
+    define("NOT_UNIQUE", 1062);
+
     if (isset($_POST['signup-submit'])) {
 
         try {
@@ -31,7 +34,7 @@
         if (mysqli_query($conn, $query)) {
             header("Location: ../index.php?action=accountCreated&username=" . $username);
             exit();
-        } else if (mysqli_errno($conn) == 1062) {
+        } else if (mysqli_errno($conn) == NOT_UNIQUE) {
             header("Location: ../signup.php?error=duplicateUsername&username=" . $username);
         } else {
             echo mysqli_error($conn);
