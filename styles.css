@@ -4,6 +4,10 @@ html, body {
     margin: 0;
   }
 
+main {
+    padding: 15px;
+}
+
 .center {
     margin: auto;
     padding-left: 10%;
@@ -23,11 +27,17 @@ html, body {
 
 .btn {
     margin: 4px;
-} 
+}
+
+.home-button {
+    height: 100%;
+    float: left;
+}
 
 .home-img {
-    vertical-align: middle;
-    max-height: 35%;
+    height: 40%;
+    width: auto;
+    margin-top: 50%;
 }
 
 .login-form {
@@ -40,4 +50,8 @@ html, body {
 
 .signup-logout {
     float: right;
+}
+
+.signup-form {
+    width: 60%;
 }
