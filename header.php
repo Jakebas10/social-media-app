@@ -26,7 +26,7 @@
                 </div>
                 <div class="signup-logout">
                     <a class="btn btn-secondary" href="signup.php">Sign Up</a>
-                    <form action="includes/logout.inc.php" method="post">
+                    <form action="includes/login.inc.php" method="post">
                         <input class="btn btn-secondary" type="submit" name="logout-submit" value="Log Out">
                     </form>
                 </div>

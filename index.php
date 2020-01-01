@@ -4,6 +4,12 @@
 
     <main>
         <div class="center wrapper-main">
-            <h1>You are logged out</h1>
+            <?php
+                if (isset($_SESSION['username'])) {
+                    echo "<h1>" . $_SESSION['username'] . " is logged in</h1>";
+                } else {
+                    echo "<h1>you are logged out</h1>";
+                }
+            ?>
         </div>
     </main>

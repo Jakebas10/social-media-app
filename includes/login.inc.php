@@ -1,9 +1,10 @@
 <?php
 
     function validLogin($user) {
+        session_start();
         $_SESSION['uid'] = $user['user_id'];
         $_SESSION['username'] = $user['username'];
-        header("Location: ../app.php");
+        header("Location: ../index.php");
         exit();
     }
 
@@ -45,7 +46,11 @@
          }
 
          mysqli_close($conn);
-
-
+    } else if (isset($_POST['logout-submit'])) {
+        session_start();
+        session_unset();
+        session_destroy();
+        header("Location: ../index.php?action=loggedOut");
+        exit();
     }
 ?>
