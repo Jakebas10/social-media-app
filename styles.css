@@ -55,3 +55,14 @@ main {
 .signup-form {
     width: 60%;
 }
+
+
+.username-label {
+    float: left;
+    margin-top: 30px;
+}
+
+.post-form {
+    float: right;
+    width: 60%;
+}
