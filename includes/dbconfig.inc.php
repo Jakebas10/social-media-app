@@ -1,7 +1,7 @@
 <?php
 
     $host = '127.0.0.1';
-    $user = 'jbasten';
+    $user = 'root';
     $pass = '';
     $db = 'social_media_app';
 

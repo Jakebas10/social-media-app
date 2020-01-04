@@ -10,15 +10,15 @@ main {
 
 .center {
     margin: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .nav-bar-main {
-    height: 15%;
+    height: 120px;
     background-color: #007bff;
 }
-
+    
 .wrapper-main {
     background-color: #F5F5F5;
     min-height: 100vh;
@@ -35,7 +35,7 @@ main {
 }
 
 .home-img {
-    height: 40%;
+    height: 50px;
     width: auto;
     margin-top: 50%;
 }
