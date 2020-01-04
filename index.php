@@ -8,7 +8,7 @@
                 if (isset($_SESSION['username'])) {
                     require "app.php";
                 } else {
-                    echo "<h1>you are logged out</h1>";
+                    require "login.php";
                 }
             ?>
         </div>

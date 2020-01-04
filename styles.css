@@ -18,11 +18,15 @@ main {
     height: 120px;
     background-color: #007bff;
 }
-    
+
 .wrapper-main {
     background-color: #F5F5F5;
     min-height: 100vh;
     text-align: center;
+}
+
+.nav-bar-container {
+    height: 100%;
 }
 
 .btn {
@@ -37,15 +41,13 @@ main {
 .home-img {
     height: 50px;
     width: auto;
-    margin-top: 50%;
+    margin-top: 30px;
 }
 
-.login-form {
+.title {
+    max-width: 500px;
+    margin-top: 30px;
     float: right;
-}
-
-.login {
-    float: left;
 }
 
 .signup-logout {
@@ -56,13 +58,9 @@ main {
     width: 60%;
 }
 
-
-.username-label {
-    float: left;
-    margin-top: 30px;
-}
-
-.post-form {
-    float: right;
-    width: 60%;
+@media only screen and (max-width: 575px) {
+    .center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }

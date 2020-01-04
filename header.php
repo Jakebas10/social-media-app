@@ -13,22 +13,10 @@
     <body>
 
         <header class="center nav-bar-main">
-            <a class="home-button" href="index.php">
-                <img class="home-img" src="img/home.png" alt="home">
-            </a>
-            <div class="login-form">
-                <div class="login">
-                    <form action="includes/login.inc.php" method="post">
-                        <input type="text" name="username" placeholder="username"/>
-                        <input type="password" name="password" placeholder="password"/>
-                        <input class="btn btn-light" type="submit" name="login-submit" value="Log In">
-                    </form>
-                </div>
-                <div class="signup-logout">
-                    <a class="btn btn-secondary" href="signup.php">Sign Up</a>
-                    <form action="includes/login.inc.php" method="post">
-                        <input class="btn btn-secondary" type="submit" name="logout-submit" value="Log Out">
-                    </form>
-                </div>
+            <div class="nav-bar-container">
+                <a class="home-button" href="index.php">
+                    <img class="home-img" src="img/home.png" alt="home">
+                </a>
+                <h2 class="title">Social Media Prototype</h1>
             </div>
         </header>
